@@ -67,10 +67,10 @@ bindsym $mod+Control+Mod1+k move workspace to output up
 bindsym $mod+Control+Mod1+l move workspace to output right
 
 # split in horizontal orientation
-bindsym $mod+Control+v split h
+#bindsym $mod+Control+v split h
 
 # split in vertical orientation
-bindsym $mod+Control+h split v
+#bindsym $mod+Control+h split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Tab fullscreen toggle
@@ -237,7 +237,8 @@ exec --no-startup-id picom &
 exec --no-startup-id monitor-switch
 exec --no-startup-id xss-lock --transfer-sleep-lock -- session-lock
 exec --no-startup-id nm-applet --no-agent
-exec --no-startup-id sleep 2; thunderbird &
+exec_always --no-startup-id killall autotiling; autotiling
+exec --no-startup-id sleep 5; thunderbird &
 
 ## WINDOWS
 for_window [class=".*"] border pixel 2
