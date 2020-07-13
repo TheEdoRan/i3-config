@@ -229,7 +229,7 @@ bindsym --release Num_Lock  exec --no-startup-id pkill -RTMIN+3 i3blocks
 
 ## AUTOSTART
 exec --no-startup-id lxqt-policykit-agent &
-exec --no-startup-id xset s off; xset -dpms; xset s noblank
+exec --no-startup-id xset s off; xset -dpms; xset s noblank; xset r rate 190 25
 exec --no-startup-id libinput-gestures &
 exec --no-startup-id redshift &
 exec --no-startup-id bingpaper
