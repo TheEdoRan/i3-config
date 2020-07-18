@@ -228,14 +228,15 @@ bindsym --release Caps_Lock exec --no-startup-id pkill -RTMIN+3 i3blocks
 bindsym --release Num_Lock  exec --no-startup-id pkill -RTMIN+3 i3blocks
 
 ## AUTOSTART
-exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id xset s off; xset -dpms; xset s noblank; xset r rate 190 25
-exec --no-startup-id libinput-gestures &
-exec --no-startup-id redshift &
+exec --no-startup-id xss-lock --transfer-sleep-lock -- session-lock
+exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id bingpaper
 exec --no-startup-id picom &
+exec --no-startup-id redshift &
+exec --no-startup-id flameshot &
+exec --no-startup-id libinput-gestures &
 exec --no-startup-id monitor-switch
-exec --no-startup-id xss-lock --transfer-sleep-lock -- session-lock
 exec --no-startup-id nm-applet --no-agent
 exec_always --no-startup-id killall autotiling; autotiling
 exec --no-startup-id sleep 5; thunderbird &
