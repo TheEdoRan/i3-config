@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:Hack Nerd Font 10
-font pango:Cantarell 11
+font pango:Noto Sans 11
 
 ## VOLUME CONTROL
 bindsym XF86AudioRaiseVolume exec --no-startup-id volctl +5% && pkill -RTMIN+1 i3blocks
@@ -211,8 +211,8 @@ bindsym $mod+Control+Shift+q exec --no-startup-id power-manager exit
 
 # Others
 bindsym $mod+e exec --no-startup-id pcmanfm
-bindsym $mod+b exec --no-startup-id firefox
-bindsym $mod+Mod1+b exec --no-startup-id chromium
+bindsym $mod+b exec --no-startup-id brave-nightly
+bindsym $mod+Mod1+b exec --no-startup-id firefox
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
 bindsym $mod+s workspace $ws4; exec --no-startup-id spotify
 bindsym $mod+igrave Exec --no-startup-id /usr/bin/electron --app /usr/lib/authy/app.asar
@@ -228,8 +228,8 @@ bindsym --release Caps_Lock exec --no-startup-id pkill -RTMIN+3 i3blocks
 bindsym --release Num_Lock  exec --no-startup-id pkill -RTMIN+3 i3blocks
 
 ## AUTOSTART
-exec --no-startup-id xset s off; xset -dpms; xset s noblank; xset r rate 190 25
-exec --no-startup-id xss-lock --transfer-sleep-lock -- session-lock
+exec --no-startup-id xset s off; xset -dpms; xset s noblank
+exec --no-startup-id light-locker --no-late-locking --lock-on-suspend --lock-on-lid &
 exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id bingpaper
 exec --no-startup-id picom &
