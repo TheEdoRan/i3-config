@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Backup original file.
+sudo mv /etc/systemd/logind.conf{,.orig}
+
+sudo tee /etc/systemd/logind.conf >/dev/null <<EOF
+[Login]
+HandlePowerKey=ignore
+HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=suspend
+HandleLidSwitchDocked=ignore
+IdleAction=ignore
+EOF
+
+echo "Completed! Now you're ready to use i3!"

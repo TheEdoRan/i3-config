@@ -1,6 +1,6 @@
 # Installation
 
-Clone this repo in `$HOME/.config/i3`.
+Clone this repo in `$HOME/.config/i3`, then run `./init`.
 
 ## Requirements
 
