@@ -211,7 +211,7 @@ bindsym $mod+Control+Shift+q exec --no-startup-id power-manager exit
 
 # Others
 bindsym $mod+e exec --no-startup-id pcmanfm
-bindsym $mod+b exec --no-startup-id brave-nightly
+bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+Mod1+b exec --no-startup-id firefox
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
 bindsym $mod+s workspace $ws4; exec --no-startup-id spotify
