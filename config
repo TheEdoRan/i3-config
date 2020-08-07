@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:Hack Nerd Font 10
-font pango:Noto Sans 11
+font pango: Noto Sans 11
 
 ## VOLUME CONTROL
 bindsym XF86AudioRaiseVolume exec --no-startup-id volctl +5% && pkill -RTMIN+1 i3blocks
@@ -228,8 +228,8 @@ bindsym --release Caps_Lock exec --no-startup-id pkill -RTMIN+3 i3blocks
 bindsym --release Num_Lock  exec --no-startup-id pkill -RTMIN+3 i3blocks
 
 ## AUTOSTART
-exec --no-startup-id xset s off; xset -dpms; xset s noblank; xset r rate 190 25
 exec --no-startup-id light-locker --no-late-locking --lock-on-suspend --lock-on-lid &
+exec --no-startup-id xset s off; xset -dpms; xset s noblank; xset r rate 190 25
 exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id bingpaper
 exec --no-startup-id picom &
@@ -237,8 +237,8 @@ exec --no-startup-id redshift &
 exec --no-startup-id flameshot &
 exec --no-startup-id libinput-gestures &
 exec --no-startup-id monitor-switch
-exec --no-startup-id nm-applet --no-agent
-exec_always --no-startup-id killall autotiling; autotiling
+exec_always --no-startup-id killall nm-applet &>/dev/null; sleep 1; nm-applet --no-agent
+exec_always --no-startup-id killall autotiling &>/dev/null; autotiling
 exec --no-startup-id sleep 5; thunderbird &
 
 ## WINDOWS
