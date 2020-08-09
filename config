@@ -215,7 +215,7 @@ bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+Mod1+b exec --no-startup-id firefox
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
 bindsym $mod+s workspace $ws4; exec --no-startup-id spotify
-bindsym $mod+igrave Exec --no-startup-id /usr/bin/electron --app /usr/lib/authy/app.asar
+bindsym $mod+igrave exec --no-startup-id authy
 bindsym $mod+apostrophe exec --no-startup-id bitwarden
 bindsym $mod+plus exec --no-startup-id =
 bindsym $mod+Shift+less exec --no-startup-id monitor-switch
