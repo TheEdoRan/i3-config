@@ -212,7 +212,7 @@ exec --no-startup-id bingpaper
 exec --no-startup-id picom &
 exec --no-startup-id redshift &
 exec --no-startup-id flameshot &
-exec --no-startup-id libinput-gestures &
+exec --no-startup-id touchegg &
 exec --no-startup-id monitor-switch
 exec_always --no-startup-id killall nm-applet &>/dev/null; sleep 1; nm-applet --no-agent
 exec_always --no-startup-id killall autotiling &>/dev/null; autotiling
