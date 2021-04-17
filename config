@@ -187,8 +187,8 @@ bindsym $mod+Control+Shift+q exec --no-startup-id power-manager exit
 bindsym $mod+space exec --no-startup-id dmenu-desktop
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 bindsym $mod+e exec --no-startup-id pcmanfm
-bindsym $mod+b exec --no-startup-id brave
-bindsym $mod+Mod1+b exec --no-startup-id firefox
+bindsym $mod+b exec --no-startup-id firefox
+bindsym $mod+Mod1+b exec --no-startup-id brave
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
 bindsym $mod+s workspace $ws4; exec --no-startup-id spotify
 bindsym $mod+igrave exec --no-startup-id authy
