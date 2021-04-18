@@ -93,11 +93,11 @@ gaps outer 5
 
 # WORKSPACES
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
