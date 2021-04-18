@@ -165,10 +165,10 @@ bar {
 bindsym XF86AudioRaiseVolume exec --no-startup-id volctl +5
 bindsym XF86AudioLowerVolume exec --no-startup-id volctl -5
 bindsym XF86AudioMute exec --no-startup-id volctl toggle && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioPlay exec --no-startup-id playerctl --ignore-player=chromium play-pause && pkill -RTMIN+6 i3blocks
-bindsym XF86AudioStop exec --no-startup-id playerctl --ignore-player=chromium stop && pkill -RTMIN+6 i3blocks
-bindsym XF86AudioNext exec --no-startup-id playerctl --ignore-player=chromium next && pkill -RTMIN+6 i3blocks
-bindsym XF86AudioPrev exec --no-startup-id playerctl --ignore-player=chromium previous && pkill -RTMIN+6 i3blocks
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && pkill -RTMIN+6 i3blocks
+bindsym XF86AudioStop exec --no-startup-id playerctl stop && pkill -RTMIN+6 i3blocks
+bindsym XF86AudioNext exec --no-startup-id playerctl next && pkill -RTMIN+6 i3blocks
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous && pkill -RTMIN+6 i3blocks
 
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightctl +10
