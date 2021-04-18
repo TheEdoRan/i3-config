@@ -184,16 +184,16 @@ bindsym $mod+Control+Shift+r exec --no-startup-id power-manager reboot
 bindsym $mod+Control+Shift+q exec --no-startup-id power-manager exit
 
 # others
-bindsym $mod+space exec --no-startup-id dmenu-desktop
+bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym $mod+plus exec --no-startup-id rofi -show calc
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 bindsym $mod+e exec --no-startup-id pcmanfm
 bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+Mod1+b exec --no-startup-id chromium
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
-bindsym $mod+s workspace $ws4; exec --no-startup-id spotify
+bindsym $mod+s workspace $ws4; exec --no-startup-id flatpak run com.spotify.Client
 bindsym $mod+igrave exec --no-startup-id authy
 bindsym $mod+apostrophe exec --no-startup-id bitwarden
-bindsym $mod+plus exec --no-startup-id =
 bindsym $mod+Shift+less exec --no-startup-id monitor-switch
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym $mod+shift+dot exec --no-startup-id transmission-gtk
