@@ -221,5 +221,6 @@ exec --no-startup-id sleep 5; thunderbird &
 
 ###############################################################################
 
-# WINDOWS
-for_window [class=".*"] border pixel 2
+# WINDOWS RULES
+for_window [class=".*"] border pixel 3
+for_window [class="Bitwarden"] floating enable
