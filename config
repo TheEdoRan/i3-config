@@ -192,6 +192,7 @@ bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+Mod1+b exec --no-startup-id chromium
 bindsym $mod+t workspace $ws2; exec --no-startup-id telegram-desktop
 bindsym $mod+s workspace $ws3; exec --no-startup-id flatpak run com.spotify.Client
+bindsym $mod+c workspace $ws4; exec --no-startup-id code
 bindsym $mod+igrave exec --no-startup-id authy
 bindsym $mod+apostrophe exec --no-startup-id bitwarden
 bindsym $mod+Shift+less exec --no-startup-id monitor-switch
